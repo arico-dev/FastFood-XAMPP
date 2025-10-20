@@ -63,6 +63,12 @@ http://localhost/fastfood-express/historial.html
 - `img/` — Recursos de imágenes
 - `database/fastfood_db_clp.sql` — Dump para crear tablas y datos iniciales
 
+## Autores ✒️
+
+
+* **Anthony Rico** -  - [arico-dev](https://github.com/arico-dev)
+* **Felipe Zurita** -  - [fzurita12](https://github.com/fzurita12)
+* **Matias Cerda** -  - [Mvtiass14](https://github.com/Mvtiass14)
 
 
 ## Contribuir
