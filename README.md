@@ -63,15 +63,7 @@ http://localhost/fastfood-express/historial.html
 - `img/` — Recursos de imágenes
 - `database/fastfood_db_clp.sql` — Dump para crear tablas y datos iniciales
 
-## Desarrollo y notas técnicas
-- Las llamadas desde el frontend usan los endpoints en `php/` (ver `js/*.js` para rutas exactas).
-- Si ves errores PHP en pantalla, habilita el reporte de errores temporalmente para depurar o revisa los logs de Apache.
-- Para cambiar la moneda o formato, revisa los scripts JS que dan formato a precios.
 
-## Buenas prácticas y siguientes pasos sugeridos
-- Añadir autenticación real para `admin.html` y asegurar los endpoints PHP.
-- Validar y sanitizar todas las entradas en `php/*` para evitar inyección SQL.
-- Separar lógica PHP en funciones/clases y añadir pruebas unitarias si se convierte en una aplicación mayor.
 
 ## Contribuir
 1. Crea un fork o copia del proyecto.
@@ -80,7 +72,4 @@ http://localhost/fastfood-express/historial.html
 
 ---
 
-Si quieres, puedo:
-- Añadir un archivo `LICENSE` (por ejemplo MIT).
-- Mejorar el README con ejemplos de API (rutas y payloads desde `php/`).
 
