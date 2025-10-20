@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFood Express - Comida Rápida</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🍔 FastFood Express</h1>
+            <nav class="nav">
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#carrito" class="nav-link">Carrito (<span id="carrito-count">0</span>)</a>
+                <a href="historial.html" class="nav-link">Historial</a>
+                <!-- agregando enlace al panel de administración -->
+                <a href="admin.html" class="nav-link">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- mensaje de bienvenida -->
+        <section class="hero">
+            <div class="container">
+                <h2>¡Bienvenido a FastFood Express! 🍔</h2>
+                <p class="hero-subtitle">Prueba nuestra deliciosa comida rápida</p>
+                <p class="hero-description">Los mejores sabores, ingredientes frescos y entrega rápida. ¡Tu comida favorita a solo un clic!</p>
+                <a href="#productos" class="btn btn-hero">Ver Nuestro Menú</a>
+            </div>
+        </section>
+
+        <!-- Sección de productos -->
+        <section id="productos" class="productos-section">
+            <div class="container">
+                <h2>Nuestros Productos</h2>
+                <div class="productos-grid" id="productos-grid">
+                    <!-- Los productos se cargan dinámicamente -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrito de compras -->
+        <section id="carrito" class="carrito-section">
+            <div class="container">
+                <h2>Carrito de Compras</h2>
+                <div id="carrito-items" class="carrito-items">
+                    <p class="carrito-vacio">Tu carrito está vacío</p>
+                </div>
+                <div class="carrito-total">
+                    <strong>Total: $<span id="carrito-total">0.00</span></strong>
+                </div>
+                <button id="btn-checkout" class="btn btn-primary" style="display: none;">Proceder al Pago</button>
+            </div>
+        </section>
+
+        <!-- Formulario de compra -->
+        <section id="checkout" class="checkout-section" style="display: none;">
+            <div class="container">
+                <h2>Datos de Entrega</h2>
+                <form id="form-checkout" class="checkout-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <span class="error-message" id="error-nombre"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                        <span class="error-message" id="error-telefono"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <span class="error-message" id="error-email"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="direccion">Dirección</label>
+                        <textarea id="direccion" name="direccion" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="metodo-pago">Método de Pago *</label>
+                        <select id="metodo-pago" name="metodo_pago" required>
+                            <option value="">Seleccionar método</option>
+                            <option value="efectivo">Efectivo</option>
+                            <option value="tarjeta">Tarjeta</option>
+                            <option value="transferencia">Transferencia</option>
+                        </select>
+                        <span class="error-message" id="error-metodo-pago"></span>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" id="btn-cancelar" class="btn btn-secondary">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Pedido</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer con información del negocio -->
+            <p>&copy; 2024 FastFood Express - La mejor comida rápida | Delivery disponible</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

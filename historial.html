@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Ventas - FastFood Express</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🍔 FastFood Express</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="#ventas" class="nav-link">Ventas</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <!-- agregando enlace al panel de administración -->
+                <a href="admin.html" class="nav-link">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="historial-section">
+            <div class="container">
+                <h2>Historial de Ventas</h2>
+                <div id="ventas-tabla" class="tabla-container">
+                     La tabla se carga dinámicamente 
+                </div>
+            </div>
+        </section>
+
+        <section class="productos-registrados">
+            <div class="container">
+                <h2>Productos Registrados</h2>
+                <div id="productos-tabla" class="tabla-container">
+                     La tabla se carga dinámicamente 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FastFood Express - Comida rápida de calidad para toda la familia</p>
+        </div>
+    </footer>
+
+    <!-- Carga directa del script sin verificación de autenticación -->
+    <script src="js/historial.js"></script>
+</body>
+</html>
