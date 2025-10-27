@@ -16,7 +16,7 @@ Interfaz de pedidos y administración básica. Archivos principales:
 - Navegador moderno
 - PHP 7.0+ (incluido en XAMPP)
 
-## Instalación y ejecución (rápido)
+## Instalación y ejecución 
 1. Copia la carpeta del proyecto dentro de la carpeta `htdocs` de XAMPP, por ejemplo:
 
    C:\\xampp\\htdocs\\fastfood-express
